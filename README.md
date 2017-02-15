@@ -34,33 +34,33 @@ LED stands for light emitting diode. It’s  operating voltage is around 3-4V. I
 Figure 3: Red, Yellow and Green LED
 
 # IR Transmitter:
-	Symbol and operation of IR transmitter is very similar to ordinary LED
-	IR transmitter generates infrared. IR transmitter is made up of Gallium arsenide. 
-	If we pass the current to gallium arsenide it produces IR rays.
-	Current applied to the sensor is directly proportional to the rays emitted 
-	Though IR transmitter can withstand up to 35mA, we have used 5mA due to shortest distance. If the distance is more we have to increase the current flow to the transmitter .
+*	Symbol and operation of IR transmitter is very similar to ordinary LED
+*	IR transmitter generates infrared. IR transmitter is made up of Gallium arsenide. 
+*	If we pass the current to gallium arsenide it produces IR rays.
+*	Current applied to the sensor is directly proportional to the rays emitted 
+*	Though IR transmitter can withstand up to 35mA, we have used 5mA due to shortest distance. If the distance is more we have to increase the current flow to the transmitter .
 
 
 # IR Receiver:
-	This circuit is mainly used to for counting application
-	Since IR can be used only during proper alignment position
-	IR receiver is having reverse characteristics of the IR transmitter
-	IR Receiver will conduct as long as the rays falls on it.
-	When a car passes between the IR transmitter and IR receiver, the IR light is blocked and as the result the resistance of the photodiode increases. This change in resistance can be converted to electrical pulses, used to control the traffic lights.
-	The schematic in the boe bot manual recommends a 1k resistor for the IR led. We chose to use a 330 ohm resistor. With a 330 ohm resistor, this sensor can detect the hand up to about 30cm(1 foot) away. If we use a higher value resistor, then the sensor has less range.
+*	This circuit is mainly used to for counting application
+*	Since IR can be used only during proper alignment position
+*	IR receiver is having reverse characteristics of the IR transmitter
+*	IR Receiver will conduct as long as the rays falls on it.
+*	When a car passes between the IR transmitter and IR receiver, the IR light is blocked and as the result the resistance of the photodiode increases. This change in resistance can be converted to electrical pulses, used to control the traffic lights.
+*	The schematic in the boe bot manual recommends a 1k resistor for the IR led. We chose to use a 330 ohm resistor. With a 330 ohm resistor, this sensor can detect the hand up to about 30cm(1 foot) away. If we use a higher value resistor, then the sensor has less range.
 
 ![image](https://cloud.githubusercontent.com/assets/11133613/22975173/ddbdc9b4-f3af-11e6-8d9b-481733fe169f.png)
 Figure 4: IR Transmitter and Receiver
 
 # Circuit Operation:
-         It operates in two modes : normal mode & density mode.
+It operates in two modes : 
+*        Normal mode & 
+*        Density mode.
 
-NORMAL MODE:
-         In this mode of operation green , yellow and red  lights change after a fixed time period like a typical traffic signal. Here ,light from  IR transmitter LED  reach IR receiver without any interruption.
-         IR sensor senses amount of cars passing through the road .By using Arduino , we can observe the voltage of IR sensor. When light from IR transmitter does not interrupted by vehicles ,value of voltage is low (about 800) .When voltage value is below 800,this mode is operated .
-
-
-DENSITY MODE:
+<b>NORMAL MODE:</b> <br>
+In this mode of operation green , yellow and red  lights change after a fixed time period like a typical traffic signal. Here ,light from  IR transmitter LED  reach IR receiver without any interruption. IR sensor senses amount of cars passing through the road .By using Arduino , we can observe the voltage of IR sensor. When light from IR transmitter does not interrupted by vehicles ,value of voltage is low (about 800) .When voltage value is below 800,this mode is operated .
+<br>
+<b>DENSITY MODE:</b><br>
 When amount of cars increases ,light of IR transmitter intersect by cars  to reach the receiver .Then the voltage of IR sensor increases (about above 850) .When voltage is below threshold value , normal mode is on; but above threshold values then the red signal becomes automatically green.
 
 # Flow Chart
@@ -68,21 +68,21 @@ When amount of cars increases ,light of IR transmitter intersect by cars  to rea
 ![screenshot004](https://cloud.githubusercontent.com/assets/11133613/22975264/51835242-f3b0-11e6-8a07-a23e3723b4fa.jpg)
 
 # Advantages:
-	Avoids wastage of time due to the traffic 
-	Fully automatic
-	Low power consumption
-	It provides the easy access in the traffic light
-	Low cost to design the circuit, maintenance of the circuit is good
-	By using this Arduino Uno we can create many more control to the appliances
-	Easy convenience to handle.
+*	Avoids wastage of time due to the traffic 
+*	Fully automatic
+*	Low power consumption
+*	It provides the easy access in the traffic light
+*	Low cost to design the circuit, maintenance of the circuit is good
+*	By using this Arduino Uno we can create many more control to the appliances
+*	Easy convenience to handle.
 
 # Limitations:
-	IR sensors sometimes may absorb normal light also. As a result, traffic system works in improper way.
-	IR sensors work only for fewer distances.
-	We have to arrange IR sensors in accurate manner otherwise they may not detect the traffic density.
+*	IR sensors sometimes may absorb normal light also. As a result, traffic system works in improper way.
+*	IR sensors work only for fewer distances.
+*	We have to arrange IR sensors in accurate manner otherwise they may not detect the traffic density.
 
 # APPLICATIONS:
-	The project is mainly used in the traffic signals in metropolitan cities to provide uniform distribution of traffic.
+*	The project is mainly used in the traffic signals in metropolitan cities to provide uniform distribution of traffic.
 
 # Conclusion:
 The project may be very well used in where the traffic signals is kept and in many other places where we need to full fill the need of the automation. In this project we have studied the optimization of traffic light controller in a City using IR sensors and Arduino . Figure-4. shows the complete circuit diagram of Arduino board. By using this system configuration we tries to reduce the possibilities of traffic jams, caused by traffic lights, to an extent and we have successfully gets the results.
@@ -90,9 +90,9 @@ The project may be very well used in where the traffic signals is kept and in ma
 
 # Future Work:
 
-	We will implement this system for  traffic controlling in a 4 lane junction.
-	We will update this system with when a pedestrian try to cross the road during green signal it will turn on an alarm and warn the pedestrian and traffic police.
-	We will update this system with when a vehicle try to move even during red signal it will turn on an alarm to warn the driver of the vehicle and the traffic
+*	We will implement this system for  traffic controlling in a 4 lane junction.
+*	We will update this system with when a pedestrian try to cross the road during green signal it will turn on an alarm and warn the pedestrian and traffic police.
+*	We will update this system with when a vehicle try to move even during red signal it will turn on an alarm to warn the driver of the vehicle and the traffic
 
 
 
